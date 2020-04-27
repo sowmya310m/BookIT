@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@color/dirtyWhite"
+    android:onClick="showItemDescription">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp">
+
+        <ImageView
+            android:id="@+id/list_item_photo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="2dp"
+            android:contentDescription="@string/item_photo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/default_photo" />
+
+        <RelativeLayout
+            android:id="@+id/item_list_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/list_item_photo"
+            android:orientation="vertical"
+            app:layout_constraintStart_toEndOf="@id/list_item_photo">
+
+            <TextView
+                android:id="@+id/list_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/item_name"
+                android:textColor="@color/black"
+                android:fontFamily="serif"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/list_item_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/list_item_name"
+                android:text="@string/item_price"
+                android:fontFamily="serif"
+                android:textColor="@color/price"
+                android:textSize="16sp" />
+
+            <!--<TextView-->
+                <!--android:id="@+id/isbn"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/list_item_price"-->
+                <!--android:text="@string/item_isbn"-->
+                <!--android:textColor="@color/cardview_shadow_start_color"-->
+                <!--android:textSize="15sp" />-->
+        </RelativeLayout>
+
+        <ToggleButton
+            android:id="@+id/list_item_fav"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="38dp"
+            android:layout_height="34dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="326dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="19dp"
+            android:layout_toRightOf="@+id/item_price"
+            android:textColor="@color/favorite"
+            android:textOff=""
+            android:textOn=""
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+

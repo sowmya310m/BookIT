@@ -1,0 +1,94 @@
+<resources>
+    <!-- About -->
+    <string name="app_name" translatable="false">BOOK IT</string>
+    <string name="slogan">Buying and Selling old books now made easy</string>
+    <string name="about_project">An Android Application Project by Group 4.</string>
+    <string name="about_school">Group-4, Santa Clara University</string>
+    <string name="repo_link">Project Repository: <a href="https://github.com/harshitharamesh22/Project">GitHub</a></string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_up">Don\'t have an account? Sign up</string>
+    <string name="action_sign_in_short">LOG IN</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completion."</string>
+    <string name="logged_out">"You are currently not logged in.</string>
+    <string name="logged_out_2">" Please log in or sign up for to see this page.</string>
+
+    <!-- Strings related to fragment buttons -->
+    <string name="home_button">Home</string>
+    <string name="profile_button">Profile</string>
+    <string name="settings_button">Settings</string>
+    <string name="search_button">Search</string>
+    <string name="favorite_button">Cart</string>
+
+    <!-- Search Options -->
+    <string name="action_search">search</string>
+    <string name="search_string">Search for your book</string>
+    <string name="search_minprice">Minimum Price</string>
+    <string name="search_maxprice">Maximum Price</string>
+    <string name="search_choose_categories">Choose a category to search for</string>
+    <string name="search_choose_subCategories">Choose a sub-category to search for</string>
+    <string-array name="search_loading">
+        <item>Please choose a category</item>
+    </string-array>
+    <string-array name="search_chooseCategory">
+        <item>Please choose a category first.</item>
+    </string-array>
+
+    <!-- Item details -->
+    <string name="item_name">Title of the book</string>
+    <string name="item_price">Price</string>
+    <string name="item_isbn">ISBN</string>
+    <string name="item_photo">Item photo</string>
+    <string name="additional_info">Additional information</string>
+    <string name="item_desc">Item description</string>
+    <string name="contact_seller">Contact seller</string>
+    <string name="seller_name">Seller name</string>
+    <string name="seller_email">Seller email</string>
+
+    <!-- Profile details -->
+    <string name="profile_first_name">First Name</string>
+    <string name="profile_last_name">Last Name</string>
+    <string name="profile_email">Email</string>
+    <string name="profile_phone_number">Phone Number</string>
+    <string name="profile_postal_code">Postal Code</string>
+    <string name="profile_photo">Profile photo</string>
+    <string name="profile_update_photo">Update profile photo</string>
+
+    <!-- Profile menu options -->
+    <string name="profile_edit">Profile Edit</string>
+    <string name="profile_save">Profile Save</string>
+    <string name="profile_edit_cancel">Profile Edit Cancel</string>
+    <string name="profile_settings">Profile Settings</string>
+
+    <!-- Add item details -->
+    <string name="what_would_you_like_to_sell">What would you like to sell?</string>
+    <string name="name_of_item">Enter title of the book</string>
+    <string name="price">Price</string>
+    <string name="description_of_the_object">Description of the book</string>
+    <string name="post_my_item">Post my item</string>
+    <string name="choose_from_gallery">Choose From Gallery</string>
+    <string name="take_a_photo">Take A photo</string>
+    <string name="add_choose_categories">Choose a category</string>
+    <string name="add_choose_subCategories">Choose a sub-category</string>
+
+    <!--<string name="register">Register</string>-->
+    <!--<string name="google_maps_key">AIzaSyBPFLxUS38OVBy6Na5fzroAMBo-Ka8-CKs</string>-->
+
+    <!--<string name="title_activity_maps">Current Place Details</string>-->
+    <!--<string name="default_info_title">Default Location</string>-->
+    <!--<string name="default_info_snippet">No places found, because location permission is disabled.</string>-->
+
+    <!-- Favorite details -->
+    <string name="no_favorites">You have no favorites!</string>
+    <string name="title_activity_maps">Map</string>
+
+
+</resources>

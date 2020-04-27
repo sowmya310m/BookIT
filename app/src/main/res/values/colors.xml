@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#DADADA</color>
+    <color name="colorAccent">#FF6E40</color>
+    <color name="colorMuted">#696969</color>
+    <color name="colorHighlighted">#C5E1A5</color>
+    <color name="colorHighlightedLight">#7FC5E1A5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="dirtyWhite">#F2F2F2</color>
+    <color name="favorite">#FCAF17</color>
+    <color name="editTextBG">#DADADA</color>
+    <color name="background_button">#8D6386</color>
+    <color name="colorRose">#b11946</color>
+    <color name="colorDark">#1b0045</color>
+    <color name="colorDarkApha">#7a071724</color>
+    <color name="colorHint">#7fffffff</color>
+    <color name="price">#B12704</color>
+
+    <color name="purple_500">#9C27B0</color>
+    <color name="deep_purple_500">#673AB7</color>
+    <color name="indigo_500">#3F51B5</color>
+    <color name="blue_500">#2196F3</color>
+    <color name="cyan_500">#00BCD4</color>
+    <color name="light_blue_500">#03A9F4</color>
+
+    <color name="loginPrimary">#7a071724</color>
+    <!--<color name="colorPrimaryDark">#E5B009</color>-->
+    <!--<color name="colorAccent">#FF4081</color>-->
+
+
+
+    <color name="transparent">#00000000</color>
+
+
+    <color name="textColor">#6e6e6e</color>
+</resources>
+    <!--<color name="colorPrimary">#8BC34A</color>-->
+    <!--<color name="colorPrimaryDark">#689F38</color>-->
+    <!--<color name="colorAccent">#FF6E40</color>-->
+    <!--<color name="colorMuted">#558B2F</color>-->
+    <!--<color name="colorHighlighted">#C5E1A5</color>-->
+    <!--<color name="colorHighlightedLight">#7FC5E1A5</color>-->
+    <!--<color name="white">#FFFFFF</color>-->
+    <!--<color name="black">#000000</color>-->
+    <!--<color name="dirtyWhite">#F2F2F2</color>-->
+    <!--<color name="favorite">#FCAF17</color>-->
+    <!--<color name="editTextBG">#DADADA</color>-->

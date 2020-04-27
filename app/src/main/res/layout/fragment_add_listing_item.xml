@@ -1,0 +1,236 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_button">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_alignParentBottom="false"
+                android:layout_marginBottom="0dp"
+                android:alpha="0.2"
+                android:scaleType="center"
+                android:src="@drawable/tb" />
+
+            <LinearLayout
+                android:id="@+id/info_selling"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:context="Fragments.SearchFragment"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textSize="16sp"
+                    android:fontFamily="serif"
+                    android:textColor="@android:color/primary_text_dark_nodisable"
+                    android:textStyle="bold"
+                    android:text="@string/what_would_you_like_to_sell" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical"
+                    android:id="@+id/selling_details">
+
+                    <EditText
+                        android:id="@+id/item_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="16sp"
+                        android:layout_marginBottom="20dp"
+                        android:fontFamily="serif"
+                        android:background="@drawable/style_2"
+                        android:hint="@string/name_of_item"/>
+
+
+                    <EditText
+                        android:id="@+id/item_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="16sp"
+                        android:layout_marginBottom="20dp"
+                        android:fontFamily="serif"
+                        android:background="@drawable/style_2"
+                        android:inputType="numberDecimal|numberSigned"
+                        android:hint="@string/price"/>
+
+
+                    <EditText
+                        android:id="@+id/item_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="16sp"
+                        android:layout_marginBottom="20dp"
+                        android:fontFamily="serif"
+                        android:background="@drawable/style_2"
+                        android:hint="@string/description_of_the_object" />
+                    <EditText
+                        android:id="@+id/addressET"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="16sp"
+                        android:layout_marginBottom="20dp"
+                        android:fontFamily="serif"
+                        android:background="@drawable/style_2"
+                        android:hint="Address" />
+
+
+                </LinearLayout>
+
+                <!--<ImageButton-->
+                <!--android:id="@+id/mapsButton"-->
+                <!--android:layout_width="44dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginStart="8dp"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:layout_marginEnd="8dp"-->
+                <!--android:layout_marginBottom="8dp"-->
+                <!--app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--app:layout_constraintEnd_toEndOf="parent"-->
+                <!--app:layout_constraintHorizontal_bias="0.737"-->
+                <!--app:layout_constraintStart_btoStartOf="parent"-->
+                <!--app:layout_constraintTop_toTopOf="parent"-->
+                <!--app:layout_constraintVertical_bias="0.818"-->
+                <!--app:srcCompat="@drawable/ic_maps" />-->
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardMaxElevation="5dp"
+                    android:layout_marginBottom="20dp"
+                    >
+
+                    <Spinner
+                        android:id="@+id/add_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="5dp"
+                        android:textSize="16sp"
+                        android:paddingTop="5dp"
+                        android:fontFamily="serif"
+                        android:textColor="@color/black"
+                        android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
+                        android:text="@string/search_choose_categories"
+                        android:entries="@array/search_loading"/>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardMaxElevation="5dp">
+
+
+                    <Spinner
+                        android:id="@+id/add_subCategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:fontFamily="serif"
+                        android:gravity="center_horizontal"
+
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:textColor="@color/black"
+                        android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
+                        android:text="@string/search_choose_subCategories"
+                        android:entries="@array/search_chooseCategory"/>
+
+                </android.support.v7.widget.CardView>
+
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/select_image_photo"
+                    android:layout_below="@+id/info_selling"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/camera_icon" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:fontFamily="serif"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/take_a_photo"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/select_image_gallery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/gallery_icon"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/white"
+                        android:fontFamily="serif"
+                        android:text="@string/choose_from_gallery" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/post_item_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="322dp"
+                    android:background="@color/black"
+                    android:fontFamily="serif"
+                    android:text="@string/post_my_item"
+                    android:textColor="@color/white" />
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Name" />
+
+            </LinearLayout>
+
+
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
+
+
+
+
+

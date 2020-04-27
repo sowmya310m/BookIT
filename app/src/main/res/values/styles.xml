@@ -1,0 +1,51 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/indigo_500</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+
+
+
+    </style>
+
+    <!--<style name="MyToolbar">-->
+        <!--<item name="theme">@style/ThemeOverlay.AppCompat.Dark</item>-->
+       <!---->
+        <!--<item name="android:background">?colorPrimary</item>-->
+        <!--<item name="android:elevation">4dp</item>-->
+    <!--</style>-->
+
+    <!-- Style for modifying the bottom navigation bar-->
+    <style name="ActionButtonStyle" parent="Widget.Design.BottomNavigationView">
+        <item name="android:icon">@color/black</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorControlHighlight">@color/colorHighlighted</item>
+    </style>
+
+    <!-- Style for divider in the listings -->
+    <style name="divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <!--<item name="android:splash">?android:attr/listDivider</item>-->
+    </style>
+
+    <!--<style name="SplashScreen" parent="Theme.AppCompat.Light.NoActionBar">-->
+    <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+    <!--<item name="windowNoTitle">true</item>-->
+    <!--<item name="windowActionBar">false</item>-->
+
+    <!--</style>-->
+
+    <style name="MainPage" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+
+</resources>
+
+
